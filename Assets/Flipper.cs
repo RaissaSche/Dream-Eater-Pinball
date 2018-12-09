@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Alavanca : MonoBehaviour
+public class Flipper : MonoBehaviour
 {
+    public KeyCode key;
     Rigidbody objRigidBody;
     Vector3 objPosition;
     int contadorTrigger;
@@ -17,7 +18,7 @@ public class Alavanca : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(key) && objRigidBody.isKinematic == true)
         {
             objRigidBody.constraints = RigidbodyConstraints.FreezePositionZ;
             objRigidBody.useGravity = true;
