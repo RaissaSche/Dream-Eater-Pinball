@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class DreamEater : MonoBehaviour
 {
+    public AudioSource soundFX;
     public Text scoreText;
     private int score;
+    private bool soundPlayed;
 
     void Start()
     {
         score = 0;
+        soundPlayed = false;
         setScoreText();
     }
 
@@ -18,6 +21,12 @@ public class DreamEater : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("collectable"))
         {
+            if (!soundPlayed)
+            {
+                soundFX.GetComponent<AudioSource>().Play(0);
+                soundPlayed = true;
+            }
+
             collider.gameObject.SetActive(false);
             score += 150;
             setScoreText();
