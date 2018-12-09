@@ -5,7 +5,7 @@ using UnityEngine;
 public class Collectables : MonoBehaviour
 {
     public Transform collectable;
-    public float targetTime = 10.0f;
+    public float targetTime = 5.0f;
 
     void Update()
     {
@@ -24,7 +24,7 @@ public class Collectables : MonoBehaviour
 
         Instantiate(collectable, new Vector3(x, -1.9f, z), Quaternion.identity);
 
-        targetTime = 10.0f;
+        targetTime = 5.0f;
     }
 }
 
