@@ -420,6 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundFX: {fileID: 327031359}
   scoreText: {fileID: 1421138532}
+  collisionController: {fileID: 1919461617}
 --- !u!114 &327031353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,6 +825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundFX: {fileID: 444617538}
   scoreText: {fileID: 1421138532}
+  collisionController: {fileID: 1919461617}
 --- !u!82 &444617538
 AudioSource:
   m_ObjectHideFlags: 0
@@ -954,6 +956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundFX: {fileID: 496993249}
   scoreText: {fileID: 1421138532}
+  collisionController: {fileID: 1919461617}
 --- !u!114 &496993243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1250,7 +1253,7 @@ GameObject:
   - component: {fileID: 631953658}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1559,7 +1562,7 @@ GameObject:
   - component: {fileID: 1087696672}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1644,7 +1647,7 @@ GameObject:
   - component: {fileID: 1120487238}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1987,7 +1990,7 @@ GameObject:
   - component: {fileID: 1328191900}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2477,6 +2480,7 @@ GameObject:
   - component: {fileID: 1919461611}
   - component: {fileID: 1919461615}
   - component: {fileID: 1919461616}
+  - component: {fileID: 1919461617}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2577,9 +2581,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1901983707}
-  duration: 60
+  duration: 180
   timeRemaining: 0
   isCountingDown: 0
+--- !u!114 &1919461617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1919461610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b331f3b5f5f5de4181b6f95978a1991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2057823018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,7 +2608,7 @@ GameObject:
   - component: {fileID: 2057823019}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

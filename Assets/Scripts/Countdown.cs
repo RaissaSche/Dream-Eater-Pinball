@@ -13,7 +13,7 @@ public class Countdown : MonoBehaviour
 
     void Start()
     {
-        duration = 3000.0f * Time.deltaTime;
+        duration = 11800.0f * Time.deltaTime;
         isCountingDown = false;
         Begin();
         SetCountdownText();

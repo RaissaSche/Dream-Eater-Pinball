@@ -7,12 +7,11 @@ public class DreamEater : MonoBehaviour
 {
     public AudioSource soundFX;
     public Text scoreText;
-    private int score;
+    public CollisionController collisionController;
     private bool soundPlayed;
 
     void Start()
     {
-        score = 0;
         soundPlayed = false;
         setScoreText();
     }
@@ -28,13 +27,14 @@ public class DreamEater : MonoBehaviour
             }
 
             collider.gameObject.SetActive(false);
-            score += 150;
+            collisionController.addScore(150);
             setScoreText();
         }
     }
 
     void setScoreText()
     {
-        scoreText.text = "Score: " + score.ToString() + " pts";
+        scoreText.text = "Score: " + collisionController.getScore().ToString() + " pts";
+        soundPlayed = false;
     }
 }

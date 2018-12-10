@@ -19,7 +19,7 @@ public class Collectables : MonoBehaviour
 
     void timerEnded()
     {
-        float x = Random.Range(-16.0f, -7.0f);
+        float x = Random.Range(-16.0f, -8.0f);
         float z = Random.Range(-3.0f, 1.0f);
 
         Instantiate(collectable, new Vector3(x, -1.9f, z), Quaternion.identity);
