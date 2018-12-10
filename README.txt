@@ -5,3 +5,5 @@ Dream Eaters & Keyblades Models -> redRevolutionnaire, MayBeePah, Square Enix & 
 Songs (Sweet Spirits & Dream Eaters) -> Kingdom Hearts: Dream Drop Distance OST
 
 Sound FX -> from KH:DDD, ripped by THEPurpleOne
+
+Drawings -> uchiwa208-d5xksn3, lalasheiletta-d5j2yjg
